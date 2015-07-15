@@ -1,0 +1,30 @@
+{
+  "vm": {
+    "ip": "192.168.44.44",
+    "memory": "1024",
+    "synced_folders": [
+      {
+        "host_path": "data/",
+        "guest_path": "/var/www/html",
+        "type": "default"
+      }
+    ],
+    "forwarded_ports": []
+  },
+  "valo": {
+    "sites": {
+      "box": {
+        "account_name": "root",
+        "account_pass": "root",
+        "account_mail": "box@example.com",
+        "site_name": "BOX",
+        "site_mail": "box@example.com",
+        "vhost": {
+          "document_root": "box",
+          "url": "box.dev",
+          "alias": ["www.box.dev"]
+        }
+      }
+    }
+  }
+}
