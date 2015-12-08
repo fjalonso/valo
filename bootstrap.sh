@@ -42,6 +42,7 @@ xdebug.remote_enable=1
 xdebug.remote_connect_back=1
 xdebug.remote_port=9000
 xdebug.remote_host=10.0.2.2
+xdebug.max_nesting_level=200
 EOF
 
 # Install MySQL
