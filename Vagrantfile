@@ -18,6 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Configure forwarded ports.
   config.vm.network "forwarded_port", guest: 35729, host: 35729, protocol: "tcp", auto_correct: true
   config.vm.network "forwarded_port", guest: 8983, host: 8983, protocol: "tcp", auto_correct: true
+  config.vm.network "forwarded_port", guest: 3306, host: 3306
   # User defined forwarded ports.
   config_json["vm"]["forwarded_ports"].each do |port|
     config.vm.network "forwarded_port", guest: port["guest_port"],
